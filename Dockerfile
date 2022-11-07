@@ -2,14 +2,21 @@ FROM quay.io/centos/centos:stream8 as arcaflow-elasticsearch-plugin
 
 RUN dnf -y module install python39 && dnf -y install python39 python39-pip git
 RUN mkdir /app
-
-ADD https://raw.githubusercontent.com/arcalot/arcaflow-plugin-template-python/main/LICENSE /app
-COPY es_plugin.py /app
-COPY es_schema.py /app
-COPY requirements.txt /app
+RUN chmod 777 /app
+ADD https://raw.githubusercontent.com/arcalot/arcaflow-plugin-template-python/main/LICENSE /app/
+ADD README.md /app/
+ADD poetry.lock /app/
+ADD pyproject.toml /app/
+ADD es_plugin.py /app/
+ADD tests/unit/test_es_plugin.py /app/
+ADD es_schema.py /app/
+RUN chmod +x /app/es_plugin.py /app/test_es_plugin.py
 WORKDIR /app
 
-RUN pip3 install -r requirements.txt
+RUN pip3 install poetry
+RUN poetry config virtualenvs.create false
+RUN poetry install --without dev
+RUN /app/test_es_plugin.py
 
 # Test stage
 FROM arcaflow-elasticsearch-plugin as test
