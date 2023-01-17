@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import unittest
-import es_plugin
+from arcaflow_plugin_elasticsearch import es_plugin
 from arcaflow_plugin_sdk import plugin
 
 
