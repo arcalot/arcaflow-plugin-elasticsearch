@@ -4,8 +4,8 @@ import json
 import os
 import time
 import unittest
-import es_plugin
 import requests
+from arcaflow_plugin_elasticsearch import es_plugin
 from requests.auth import HTTPBasicAuth
 from arcaflow_plugin_sdk import plugin
 
