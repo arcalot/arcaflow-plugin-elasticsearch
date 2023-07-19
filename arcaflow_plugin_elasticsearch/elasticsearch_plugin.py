@@ -7,7 +7,7 @@ import typing
 from elasticsearch import Elasticsearch
 
 from arcaflow_plugin_sdk import plugin
-from es_schema import ErrorOutput, SuccessOutput, StoreDocumentRequest
+from elasticsearch_schema import ErrorOutput, SuccessOutput, StoreDocumentRequest
 
 
 def getEnvironmentVariables(
