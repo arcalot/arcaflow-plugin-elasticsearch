@@ -4,7 +4,7 @@ import json
 import os
 import time
 import unittest
-import es_plugin
+import elasticsearch_plugin
 import requests
 from requests.auth import HTTPBasicAuth
 from arcaflow_plugin_sdk import plugin
@@ -23,7 +23,7 @@ class StoreIntegrationTest(unittest.TestCase):
 
     def test_empty_data(self) -> None:
         exitcode = plugin.run(
-            s=plugin.build_schema(es_plugin.store),
+            s=plugin.build_schema(elasticsearch_plugin.store),
             argv=[
                 "",
                 "-f",
@@ -40,7 +40,7 @@ class StoreIntegrationTest(unittest.TestCase):
 
     def test_simple_data(self) -> None:
         exitcode = plugin.run(
-            s=plugin.build_schema(es_plugin.store),
+            s=plugin.build_schema(elasticsearch_plugin.store),
             argv=[
                 "",
                 "-f",
@@ -60,7 +60,7 @@ class StoreIntegrationTest(unittest.TestCase):
 
     def test_nested_data(self) -> None:
         exitcode = plugin.run(
-            s=plugin.build_schema(es_plugin.store),
+            s=plugin.build_schema(elasticsearch_plugin.store),
             argv=[
                 "",
                 "-f",
@@ -107,7 +107,7 @@ class StoreIntegrationTest(unittest.TestCase):
 
     @staticmethod
     def get_elasticsearch_data(sample: str) -> dict:
-        url, user, password = es_plugin.getEnvironmentVariables(
+        url, user, password = elasticsearch_plugin.getEnvironmentVariables(
             "ELASTICSEARCH_URL",
             "ELASTICSEARCH_USERNAME",
             "ELASTICSEARCH_PASSWORD",
