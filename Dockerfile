@@ -39,7 +39,7 @@ COPY ${package}/ /app/${package}
 RUN python -m pip install -r requirements.txt
 
 WORKDIR /app/${package}
-ENTRYPOINT ["python3", "elasticsearch_plugin.py"]
+ENTRYPOINT ["python", "elasticsearch_plugin.py"]
 CMD []
 
 LABEL org.opencontainers.image.source="https://github.com/arcalot/arcaflow-plugin-elasticsearch"
