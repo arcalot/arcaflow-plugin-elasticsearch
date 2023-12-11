@@ -281,13 +281,13 @@ develop = ["aiohttp", "mock", "pytest", "pytest-asyncio", "pytest-cov", "pytest-
 
 [[package]]
 name = "elasticsearch"
-version = "8.11.0"
+version = "8.11.1"
 description = "Python client for Elasticsearch"
 optional = false
 python-versions = ">=3.6"
 files = [
-    {file = "elasticsearch-8.11.0-py3-none-any.whl", hash = "sha256:26b72957ee617c9f0b23ac872e1c133cf9d7f5d439c615daaa11016265da36ab"},
-    {file = "elasticsearch-8.11.0.tar.gz", hash = "sha256:9e08413beaff3a46bc10c6c57069a84704df6aaa93085c737df07f58a2811b78"},
+    {file = "elasticsearch-8.11.1-py3-none-any.whl", hash = "sha256:a98309cee11fef8d6750f388683e9a8005da94bdfd940b36ef85cb6cc53186c7"},
+    {file = "elasticsearch-8.11.1.tar.gz", hash = "sha256:360b721324ce4bc7d554afb8acbf4942370e73c5ef8c4dad5f5ba3bb2a70eeae"},
 ]
 
 [package.dependencies]
