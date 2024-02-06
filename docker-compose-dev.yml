@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   elasticsearch:
-    image: docker.elastic.co/elasticsearch/elasticsearch:8.11.4@sha256:8425bc28027fd667d9a29cde58bed4050a64a854d973d8d1ad4152ecec52bfdb
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.12.1@sha256:a476af93763c9ca22f8b6d1f7dfad0b96304b69006aeeeda949912fe8263f604
     container_name: elasticsearch
     environment:
       - discovery.type=single-node
