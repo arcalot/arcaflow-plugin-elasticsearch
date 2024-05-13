@@ -1,4 +1,4 @@
-FROM quay.io/centos/centos:stream8@sha256:cb10b58aa113732193dddbbe4e91d80ca97f8ec742ef66cf4ff8340f5b90faab as arcaflow-elasticsearch-plugin
+FROM quay.io/centos/centos:stream8@sha256:8d020e964afb2a0dabf26daccc9769341d763e5920518f6b940e03bb798e8be7 as arcaflow-elasticsearch-plugin
 
 RUN dnf -y module install python39 && dnf -y install python39 python39-pip git
 RUN mkdir /app
