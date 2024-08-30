@@ -56,10 +56,8 @@ Load data into elasticsearch instance
 
 <table><tbody>
 <tr><th>Type:</th><td><code>scope</code></td><tr><th>Root object:</th><td>StoreDocumentRequest</td></tr>
-<tr><th>Properties</th><td><details><summary>data (<code>map[<code>string</code>, <code>
-    any</code>]</code>)</summary>
-                <table><tbody><tr><th>Name:</th><td>data</td></tr><tr><th>Description:</th><td>Data to upload to your Elasticsearch index.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>map[<code>string</code>, <code>
-    any</code>]</code></td><tr><td colspan="2">
+<tr><th>Properties</th><td><details><summary>data (<code>map[<code>string</code>,<code>any</code>]</code>)</summary>
+                <table><tbody><tr><th>Name:</th><td>data</td></tr><tr><th>Description:</th><td width="500">Data to upload to your Elasticsearch index.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>map[<code>string</code>,<code>any</code>]</code></td><tr><td colspan="2">
     <details>
         <summary>Key type</summary>
         <table><tbody><tr><th>Type:</th><td><code>string</code></td></tbody></table>
@@ -68,25 +66,22 @@ Load data into elasticsearch instance
 <tr><td colspan="2">
     <details>
         <summary>Value type</summary>
-        <table><tbody><tr><th>Type:</th><td><code>
-    any</code></td></tbody></table>
+        <table><tbody><tr><th>Type:</th><td><code>any</code></td></tbody></table>
     </details>
 </td></tr>
 </tbody></table>
             </details><details><summary>index (<code>string</code>)</summary>
-                <table><tbody><tr><th>Name:</th><td>index</td></tr><tr><th>Description:</th><td>Name of the Elasticsearch index that will receive the data. </td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td><tr><th>Minimum length:</th><td>1</td></tr></tbody></table>
+                <table><tbody><tr><th>Name:</th><td>index</td></tr><tr><th>Description:</th><td width="500">Name of the Elasticsearch index that will receive the data. </td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td><tr><th>Minimum length:</th><td>1</td></tr></tbody></table>
             </details><details><summary>password (<code>string</code>)</summary>
-                <table><tbody><tr><th>Name:</th><td>password</td></tr><tr><th>Description:</th><td>Name of the environment variable containing the password for the given user.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td></tbody></table>
+                <table><tbody><tr><th>Name:</th><td>password</td></tr><tr><th>Description:</th><td width="500">Name of the environment variable containing the password for the given user.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td></tbody></table>
             </details><details><summary>url (<code>string</code>)</summary>
-                <table><tbody><tr><th>Name:</th><td>url</td></tr><tr><th>Description:</th><td>Name of the environment variable containing the URL for the Elasticsearch instance.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td></tbody></table>
+                <table><tbody><tr><th>Name:</th><td>url</td></tr><tr><th>Description:</th><td width="500">Name of the environment variable containing the URL for the Elasticsearch instance.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td></tbody></table>
             </details><details><summary>username (<code>string</code>)</summary>
-                <table><tbody><tr><th>Name:</th><td>username</td></tr><tr><th>Description:</th><td>Name of the environment variable containing an authorized user for the given Elasticsearch instance.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td><tr><th>Minimum length:</th><td>1</td></tr></tbody></table>
+                <table><tbody><tr><th>Name:</th><td>username</td></tr><tr><th>Description:</th><td width="500">Name of the environment variable containing an authorized user for the given Elasticsearch instance.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td><tr><th>Minimum length:</th><td>1</td></tr></tbody></table>
             </details></td></tr>
 <tr><td colspan="2"><details><summary><strong>Objects</strong></summary><details><summary>StoreDocumentRequest (<code>object</code>)</summary>
-            <table><tbody><tr><th>Type:</th><td><code>object</code></td><tr><th>Properties</th><td><details><summary>data (<code>map[<code>string</code>, <code>
-    any</code>]</code>)</summary>
-        <table><tbody><tr><th>Name:</th><td>data</td></tr><tr><th>Description:</th><td>Data to upload to your Elasticsearch index.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>map[<code>string</code>, <code>
-    any</code>]</code></td><tr><td colspan="2">
+            <table><tbody><tr><th>Type:</th><td><code>object</code></td><tr><th>Properties</th><td><details><summary>data (<code>map[<code>string</code>,<code>any</code>]</code>)</summary>
+        <table><tbody><tr><th>Name:</th><td>data</td></tr><tr><th>Description:</th><td width="500">Data to upload to your Elasticsearch index.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>map[<code>string</code>,<code>any</code>]</code></td><tr><td colspan="2">
     <details>
         <summary>Key type</summary>
         <table><tbody><tr><th>Type:</th><td><code>string</code></td></tbody></table>
@@ -95,19 +90,18 @@ Load data into elasticsearch instance
 <tr><td colspan="2">
     <details>
         <summary>Value type</summary>
-        <table><tbody><tr><th>Type:</th><td><code>
-    any</code></td></tbody></table>
+        <table><tbody><tr><th>Type:</th><td><code>any</code></td></tbody></table>
     </details>
 </td></tr>
 </tbody></table>
         </details><details><summary>index (<code>string</code>)</summary>
-        <table><tbody><tr><th>Name:</th><td>index</td></tr><tr><th>Description:</th><td>Name of the Elasticsearch index that will receive the data. </td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td><tr><th>Minimum length:</th><td>1</td></tr></tbody></table>
+        <table><tbody><tr><th>Name:</th><td>index</td></tr><tr><th>Description:</th><td width="500">Name of the Elasticsearch index that will receive the data. </td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td><tr><th>Minimum length:</th><td>1</td></tr></tbody></table>
         </details><details><summary>password (<code>string</code>)</summary>
-        <table><tbody><tr><th>Name:</th><td>password</td></tr><tr><th>Description:</th><td>Name of the environment variable containing the password for the given user.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td></tbody></table>
+        <table><tbody><tr><th>Name:</th><td>password</td></tr><tr><th>Description:</th><td width="500">Name of the environment variable containing the password for the given user.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td></tbody></table>
         </details><details><summary>url (<code>string</code>)</summary>
-        <table><tbody><tr><th>Name:</th><td>url</td></tr><tr><th>Description:</th><td>Name of the environment variable containing the URL for the Elasticsearch instance.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td></tbody></table>
+        <table><tbody><tr><th>Name:</th><td>url</td></tr><tr><th>Description:</th><td width="500">Name of the environment variable containing the URL for the Elasticsearch instance.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td></tbody></table>
         </details><details><summary>username (<code>string</code>)</summary>
-        <table><tbody><tr><th>Name:</th><td>username</td></tr><tr><th>Description:</th><td>Name of the environment variable containing an authorized user for the given Elasticsearch instance.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td><tr><th>Minimum length:</th><td>1</td></tr></tbody></table>
+        <table><tbody><tr><th>Name:</th><td>username</td></tr><tr><th>Description:</th><td width="500">Name of the environment variable containing an authorized user for the given Elasticsearch instance.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td><tr><th>Minimum length:</th><td>1</td></tr></tbody></table>
         </details></td></tr>
 </tbody></table>
         </details></details></td></tr>
