@@ -11,7 +11,7 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.9"
-arcaflow-plugin-sdk = "0.14.1"
+arcaflow-plugin-sdk = "0.14.2"
 elasticsearch = "^8.4.3"
 
 [tool.poetry.dev-dependencies]
